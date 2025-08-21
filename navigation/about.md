@@ -7,11 +7,12 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have lived.
-
+Here are some of my favorite things
+![Guitar]({{site.baseurl}}/images/about/guitar.jpg)
 <comment>
-Flags are made using Wikipedia images
+
 </comment>
+![Guitar]({{site.baseurl}}/images/about/guitar.jpg) 
 
 <style>
     /* Style looks pretty compact, 
@@ -97,12 +98,12 @@ Flags are made using Wikipedia images
     }
 </script>
 
-### Journey through Life
+### Places I've been to
 
 Here is what I did at those places
 
-- 🏫 Lots of Elementary Schools in Tucson, LA, Honolulu, and Glendale (CA)
-- 🏫 Middle and High School in Glendale (CA), Hoover High graduated '77
+- Belgium; a place where i've visited a couple times to see my cousins.
+- Portugal; Country of night life 
 - 🎓 Glendale CA Community College, UCLA Extension, LA Wilshire Computer Tech School '77 to '79
 - ⛪ England, London Missionary for Church of Jesus Christ of Latter-day Saints '79 to '81
 - 💼 Culver City, Glendale CA founder at Ashton-Tate, original PC's dBase 2 and 3 '82 to '87
