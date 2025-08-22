@@ -121,7 +121,10 @@ Everything for me, as for many others, revolves around family and faith.
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
+  <img src="{{site.baseurl}}/images/about/
+  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Guitar" style="max-width: 400px;">missionary.jpg" alt="Image 1">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="Belgium Flag" style="max-width: 300px;">
+  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Guitar" style="max-width: 400px;">
   <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
   <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
   <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
