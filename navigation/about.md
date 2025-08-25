@@ -8,11 +8,12 @@ comments: true
 ## As a conversation Starter
 
 Here are some of my favorite things
-![Guitar]({{site.baseurl}}/images/about/guitar.jpg)
+![Ocean](https://images.unsplash.com/photo-1507525428034-b723cf961d3e)
+![Boat](https://images.unsplash.com/photo-1464983953574-0892a716854b)
+
 <comment>
 
-</comment>
-![Guitar]({{site.baseurl}}/images/about/guitar.jpg) 
+ 
 
 <style>
     /* Style looks pretty compact, 
@@ -119,22 +120,10 @@ A little bit about me
 
 
 <comment>
-Gallery of Pics, scroll to the right for more ...
+
 </comment>
 </comment>
 <div class="image-gallery">
   <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Guitar" style="max-width: 400px;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="Belgium Flag" style="max-width: 300px;">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
-</div>
+  
