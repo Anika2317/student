@@ -99,14 +99,13 @@ Here are some of my favorite things
     }
 </script>
 
-### Places I've been to
-
-A little bit about me
+### A Little About Me
 
 - Belgium; is my favorite place because I've spent summers there and always create amazing memories.  
 - My zodiac sign is Pisces 
 - I love to play guitar
 - My favorite number is 23
+- My shoe size is 6 1/2
 - My favorite food is pizza
 - I have a younger sister
 - My favorite movie is Dead Poets Society
