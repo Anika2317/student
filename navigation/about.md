@@ -108,23 +108,24 @@ A little bit about me
 - My favorite number is 23
 - My favorite food is pizza
 - I have a younger sister
+- My favorite movie is Dead Poets Society
+- My favorite show is Blue Bloods
+- I love to listen to folk music 
+- My favorite artists include Zach Bryan, Lumineers, Noah Kahan
 
-### Culture, Family, and Fun
 
-Everything for me, as for many others, revolves around family and faith.
 
-- My mother told me that I was Danish, English. and Irish, here is my researched [family tree]({{site.baseurl}}/images/about/familytree.png)
-- My family is pretty big as I have been married twice, my 1st wife passed away.  We have had 5 kids, 4 adopted by me, 1 biological.  Plus, there are three grandkids.  My name to my grandkids is Abuilito.
-- The gallery of pics has some of my family, fun, culture and faith memories.
+
+
 
 <comment>
 Gallery of Pics, scroll to the right for more ...
 </comment>
+</comment>
 <div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/
-  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Guitar" style="max-width: 400px;">missionary.jpg" alt="Image 1">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="Belgium Flag" style="max-width: 300px;">
   <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Guitar" style="max-width: 400px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg" alt="Belgium Flag" style="max-width: 300px;">
+  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
   <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
   <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
   <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
