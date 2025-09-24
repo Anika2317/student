@@ -4,83 +4,138 @@ title: Background with Object
 description: Use JavaScript to have an in motion background.
 sprite: /images/platformer/sprites/flying-ufo.png
 background: /images/platformer/backgrounds/alien_planet1.jpg
-permalink: /background
+permalink: /background/
 ---
 
 <canvas id="world"></canvas>
 
 <script>
-  const canvas = document.getElementById("world");
-  const ctx = canvas.getContext('2d');
+ console.log("UFO script loaded!");
+ const keys = {};
+ window.addEventListener("keydown", (e) => {
+   keys[e.key] = true;
+ });
+ window.addEventListener("keyup", (e) => {
+   keys[e.key] = false;
+ });
 
-  const backgroundImg = new Image();
-  backgroundImg.src = '{{page.background}}';
+ const canvas = document.getElementById("world");
+ const ctx = canvas.getContext('2d');
+ const backgroundImg = new Image();
+ const spriteImg = new Image();
+ backgroundImg.src = '{{page.background}}';
+ spriteImg.src = '{{page.sprite}}';
 
-  const spriteImg = new Image();
-  spriteImg.src = '{{page.sprite}}';
+ let imagesLoaded = 0;
+ backgroundImg.onload = () => { imagesLoaded++; startGameWorld(); };
+ spriteImg.onload = () => { imagesLoaded++; startGameWorld(); };
 
-  backgroundImg.onload = function() {
-    const canvasWidth = window.innerWidth;
-    const canvasHeight = window.innerHeight;
+ function startGameWorld() {
+   if (imagesLoaded < 2) return;
 
-    canvas.width = canvasWidth;
-    canvas.height = canvasHeight;
-    
-    canvas.style.width = `${canvasWidth}px`;
-    canvas.style.height = `${canvasHeight}px`;
+   class GameObject {
+     constructor(image, width, height, x = 0, y = 0, speedRatio = 0) {
+       this.image = image;
+       this.width = width;
+       this.height = height;
+       this.x = x;
+       this.y = y;
+       this.speedRatio = speedRatio;
+       this.speed = GameWorld.gameSpeed * this.speedRatio;
+     }
+     update() {}
+     draw(ctx) {
+       ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+     }
+   }
 
-    canvas.style.position = 'absolute';
-    canvas.style.left = `0px`;
-    canvas.style.top = `${(window.innerHeight - canvasHeight) / 2}px`;
+   class Background extends GameObject {
+     constructor(image, gameWorld) {
+       super(image, gameWorld.width, gameWorld.height, 0, 0, 0.1);
+       this.gameWorld = gameWorld;
+     }
+     update() {
+       this.speed = GameWorld.gameSpeed * this.speedRatio;
+       this.x = (this.x - this.speed) % this.width;
+     }
+     draw(ctx) {
+       ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+       ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
+     }
+   }
 
-    var gameSpeed = 5;
+   class Player extends GameObject {
+     constructor(image, gameWorld) {
+       const width = image.naturalWidth / 2;
+       const height = image.naturalHeight / 2;
+       const x = (gameWorld.width - width) / 2;
+       const y = (gameWorld.height - height) / 2;
+       super(image, width, height, x, y);
+       this.gameWorld = gameWorld;
+       this.speed = 5;
+       console.log("Hello, UFO is flying!");
+     }
+     update() {
+       if (keys["ArrowUp"]) this.y -= this.speed;
+       if (keys["ArrowDown"]) this.y += this.speed;
+       if (keys["ArrowLeft"]) this.x -= this.speed;
+       if (keys["ArrowRight"]) this.x += this.speed;
 
-    class GameObject {
-      constructor(image, width, height, x = 0, y = 0, speedRatio = 0) {
-        this.image = image;
-        this.width = width;
-        this.height = height;
-        this.x = x;
-        this.y = y;
-        this.speedRatio = speedRatio;
-        this.speed = gameSpeed * this.speedRatio;
-      }
-      update() {}
-      draw(ctx) {
-        ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
-      }
-    }
+       // Keep UFO inside canvas bounds (using gameWorld dimensions)
+       if (this.x < 0) this.x = 0;
+       if (this.y < 0) this.y = 0;
+       if (this.x + this.width > this.gameWorld.width) {
+         this.x = this.gameWorld.width - this.width;
+       }
+       if (this.y + this.height > this.gameWorld.height) {
+         this.y = this.gameWorld.height - this.height;
+       }
+     }
+   }
 
-    class Background extends GameObject {
-      update() {
-        this.x = (this.x - this.speed) % this.width;
-      }
-      draw(ctx) {
-        // Draw two images for seamless scrolling
-        ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
-        ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
-      }
-    }
+   class GameWorld {
+     static gameSpeed = 5;
+     constructor(backgroundImg, spriteImg) {
+       this.canvas = document.getElementById("world");
+       this.ctx = this.canvas.getContext('2d');
+       this.resizeCanvas();
 
-    // Create objects
-    const backgroundObj = new Background(backgroundImg, canvasWidth, canvasHeight, 0, 0, 0.1);
+       this.background = new Background(backgroundImg, this);
+       this.player = new Player(spriteImg, this);
 
-    // Center the sprite and scale it down
-    const spriteWidth = spriteImg.naturalWidth / 2;
-    const spriteHeight = spriteImg.naturalHeight / 2;
-    const spriteX = (canvasWidth - spriteWidth) / 2;
-    const spriteY = (canvasHeight - spriteHeight) / 2;
-    const spriteObj = new GameObject(spriteImg, spriteWidth, spriteHeight, spriteX, spriteY);
+       this.gameObjects = [this.background, this.player];
 
-    function animate() {
-      ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-      backgroundObj.update();
-      backgroundObj.draw(ctx);
-      if (spriteImg.complete && spriteImg.naturalWidth > 0) {
-        spriteObj.draw(ctx);
-      }
-      requestAnimationFrame(animate);
-    }
-    animate();
-  };
+       // Handle window resize
+       window.addEventListener("resize", () => this.resizeCanvas());
+     }
+
+     resizeCanvas() {
+       this.width = window.innerWidth;
+       this.height = window.innerHeight;
+       this.canvas.width = this.width;
+       this.canvas.height = this.height;
+       this.canvas.style.width = `${this.width}px`;
+       this.canvas.style.height = `${this.height}px`;
+       this.canvas.style.position = 'absolute';
+       this.canvas.style.left = `0px`;
+       this.canvas.style.top = `0px`;
+     }
+
+     gameLoop() {
+       this.ctx.clearRect(0, 0, this.width, this.height);
+       for (const obj of this.gameObjects) {
+         obj.update();
+         obj.draw(this.ctx);
+       }
+       requestAnimationFrame(this.gameLoop.bind(this));
+     }
+
+     start() {
+       this.gameLoop();
+     }
+   }
+
+   const world = new GameWorld(backgroundImg, spriteImg);
+   world.start();
+ }
 </script>
