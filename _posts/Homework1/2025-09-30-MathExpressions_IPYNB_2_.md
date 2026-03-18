@@ -47,7 +47,6 @@ total = (num1 / num2) + 2 ** 3  # 6 / 3 + 8 = 2 + 8 = 10
 
 part2_result = (total + 15) - (num1 ** 2 / 4)  # (10 + 15) - (36 / 4) = 16
 print("Part 2 Answer:", part2_result)  # Output: 16.0
-
 ```
 
     Part 1 Answer: 21.0

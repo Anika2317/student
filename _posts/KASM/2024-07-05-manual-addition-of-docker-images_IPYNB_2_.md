@@ -2,9 +2,13 @@
 layout: post
 title: Manual Addition of Docker Images to Kasm
 description: When Kasm registry is not working, even with third party additions, there are ways to directly import a docker image from dockerhub.
+type: ccc
+courses: {}
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/config/manual_docker_add
 author: Rachit Jaiswal
-type: ccc
 ---
 
 <h2>Step 1: Navigation</h2>

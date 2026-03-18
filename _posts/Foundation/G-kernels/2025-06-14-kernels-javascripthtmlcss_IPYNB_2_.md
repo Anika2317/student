@@ -1,8 +1,4 @@
 ---
----
-
-```python
----
 layout: post
 title: HTML, CSS, and JS Kernels
 description: This page will teach you how to use HTML, CSS, and JavaScript kernels in Jupyter Notebooks.
@@ -10,7 +6,6 @@ categories: ['Kernels']
 permalink: /tools/kernels/html-css-js-kernels/
 breadcrumb: True
 ---
-```
 
 ## JavaScript and Jupyter references
 > JavaScript is the most important language you need to learn as a frontend developer.  Jupyter Notebooks is a convenient way to learn portions of the language without the overhead of creating a full Website. 

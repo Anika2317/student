@@ -2,6 +2,7 @@
 layout: toolkit
 title: Reporting Issues
 permalink: /bathroom/issues
+toc: True
 ---
 
 <head>

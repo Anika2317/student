@@ -2,7 +2,10 @@
 layout: post
 title: KASM User Guide
 description: How to Start Using KASM
-categories: [Kasm]
+categories: ['Kasm']
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/userguide
 author: Isabel Marilla
 ---

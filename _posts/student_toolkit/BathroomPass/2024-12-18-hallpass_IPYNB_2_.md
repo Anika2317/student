@@ -2,8 +2,9 @@
 layout: toolkit
 title: Hallpass
 permalink: /hallpass_queue/hallpass
+menu: nav/toolkits/bathroom/menu.html
+toc: False
 ---
-
 
 <div class="hallpass-container">
     <div class="hallpass-header">Hall Pass</div>

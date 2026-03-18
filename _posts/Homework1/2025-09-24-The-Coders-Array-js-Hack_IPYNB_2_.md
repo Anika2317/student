@@ -164,22 +164,21 @@ This can be completed in the next code cell. Remember that making mistakes is pa
 
 
 ```python
+// Starting with a food list
+let favoriteFoods = ["pasta", "pizza", "burgers", "salads", "tacos"];
 
-favorite_foods = ["pasta", "pizza", "burgers", "salads", "tacos"]
+console.log("First food:", favoriteFoods[0]);
 
-print("First food:", favorite_foods[0])
+favoriteFoods[2] = "sushi";
 
-favorite_foods[2] = "sushi"
+favoriteFoods.push("ice cream");
 
-favorite_foods.append("ice cream")
+console.log("New length of list:", favoriteFoods.length);
 
-print("New length of list:", len(favorite_foods))
+console.log("All favorite foods:", favoriteFoods);
 
-print("All favorite foods:", favorite_foods)
-
-favorite_foods.insert(0, "pancakes")
-print("After adding one at the beginning:", favorite_foods)
-
+favoriteFoods.unshift("pancakes");
+console.log("After adding one at the beginning:", favoriteFoods);
 ```
 
     First food: pasta
@@ -249,16 +248,14 @@ Notice how everything shifts over by one position. This is why adding to the fro
 
 
 ```python
-# Starting with a food list
-favorite_foods = ["pizza", "ice cream", "burgers", "tacos", "pasta", "chocolate"]
-print("Before adding:", favorite_foods)
+let favoriteFoods = ["pizza", "ice cream", "burgers", "tacos", "pasta", "chocolate"];
+console.log("Before adding:", favoriteFoods);
 
-# Add "waffles" to the beginning
-favorite_foods.insert(0, "waffles")
+// Add "waffles" to the beginning
+favoriteFoods.unshift("waffles");
 
-print("After adding:", favorite_foods)
-print("New length:", len(favorite_foods))
-
+console.log("After adding:", favoriteFoods);
+console.log("New length:", favoriteFoods.length);
 ```
 
     Before adding: ['pizza', 'ice cream', 'burgers', 'tacos', 'pasta', 'chocolate']
@@ -307,29 +304,43 @@ Remember that for the average temperature, you'll want to add all values and div
 
 
 ```python
-# Hack #2: The Temperature Array
+// Hack #2: The Temperature Array
 
-# 1. Create a temperature array for a week
-week_temps = [72, 68, 74, 80, 76, 72, 67]
+let weekTemps = [72, 68, 74, 80, 76, 72, 67];
 
-# 2. Find specific days
-print("Monday temperature:", week_temps[0])
-print("Friday temperature:", week_temps[4])
+// 2. Find specific days
 
-# 3. Find the weekly average
-average_temp = sum(week_temps) / len(week_temps)
-print("Average temperature:", round(average_temp, 1))
+console.log("Monday temperature:", weekTemps[0]);
 
-# 4. Find the hottest day
-hottest_temp = max(week_temps)
-print("Hottest temperature:", hottest_temp)
+console.log("Friday temperature:", weekTemps[4]);
 
-# 5. Temperature check
-if any(temp > 80 for temp in week_temps):
-    print("It was hot this week!")
-else:
-    print("It was mild this week.")
+// 3. Find the weekly average
 
+let sum = weekTemps.reduce((a, b) => a + b, 0);
+
+let averageTemp = sum / weekTemps.length;
+
+console.log("Average temperature:", Math.round(averageTemp * 10) / 10);
+
+// 4. Find the hottest day
+
+let hottestTemp = Math.max(...weekTemps);
+
+console.log("Hottest temperature:", hottestTemp);
+
+// 5. Temperature check
+
+let hasHotDay = weekTemps.some(temp => temp > 80);
+
+if (hasHotDay) {
+
+    console.log("It was hot this week!");
+
+} else {
+
+    console.log("It was mild this week.");
+
+}
 ```
 
     Monday temperature: 72

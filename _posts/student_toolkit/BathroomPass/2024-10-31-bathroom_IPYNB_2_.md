@@ -2,6 +2,8 @@
 layout: aesthetihawk
 title: Bathroom
 permalink: /hallpass_queue
+active_tab: hallpass
+toc: False
 ---
 
 <div class="container">

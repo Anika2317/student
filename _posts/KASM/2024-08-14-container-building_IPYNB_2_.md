@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Kasm Workspaces Container Building
-categories: [Kasm]
 permalink: kasm/workspaces/container-build
+menu: nav/kasm_cloud.html
+categories: ['Kasm']
 author: Torin Wolff
+toc: True
+comments: True
 ---
 
 ## Kasm Workspaces Development

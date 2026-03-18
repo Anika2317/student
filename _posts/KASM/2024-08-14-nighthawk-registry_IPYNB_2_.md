@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Nighthawk Registry Guide
-categories: [Kasm]
 permalink: /kasm/workspaces/registry
+menu: nav/kasm_cloud.html
+categories: ['Kasm']
 author: Torin Wolff
+toc: True
+comments: True
 ---
 
 ## Nighthawk Registry Description

@@ -1,7 +1,9 @@
 ---
 layout: base
+active_tab: requestpass
 title: Reporting Issues
 permalink: /hallpass/requestpass
+toc: True
 ---
 
 <div class="container">

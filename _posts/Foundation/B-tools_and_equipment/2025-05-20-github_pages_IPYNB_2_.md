@@ -4,6 +4,7 @@ title: GitHub Pages
 description: This page will teach you how to set up GitHub Pages using the VSCode online editor.
 categories: ['DevOps']
 permalink: /tools/github_pages
+breadcrumb: True
 ---
 
 <style>

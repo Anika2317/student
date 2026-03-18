@@ -2,7 +2,10 @@
 layout: post
 title: Multi-Server Workspace Registry
 description: How to configure the Kasm Muti-Server Workspaces
-categories: [Kasm]
+categories: ['Kasm']
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/multiserver/workspace-registry
 author: Rachit Jaiswal
 ---

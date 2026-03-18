@@ -2,9 +2,13 @@
 layout: post
 title: Kasm Persistent Data Configuration Guide
 description: How to configure Kasm to store data on the agent servers
+type: ccc
+courses: {}
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/config/agent_persistent_data
 author: Rachit Jaiswal
-type: ccc
 ---
 
 <p>Persistent data or persistent profiles is a setup that allows users to retain their data even after their images close using the storage availible on the agent servers. While this is beneficial, we recommend important data be backed up in Git, or moved into Drive.</p>

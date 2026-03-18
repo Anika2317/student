@@ -1,8 +1,4 @@
 ---
----
-
-```python
----
 layout: post
 title: Java Kernel
 description: This page will teach you how to set up your Java kernel in Jupyter Notebooks.
@@ -10,7 +6,6 @@ categories: ['Kernels']
 permalink: /tools/kernels/java
 breadcrumb: True
 ---
-```
 
 # Install IJava 1.3.0 Kernel for Jupyter (Java 17) on WSL (Ubuntu) & macOS (Homebrew)
 

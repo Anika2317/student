@@ -2,6 +2,7 @@
 layout: toolkit
 title: Bathroom statistics
 permalink: /bathroom/statistics
+toc: False
 ---
 
 ---

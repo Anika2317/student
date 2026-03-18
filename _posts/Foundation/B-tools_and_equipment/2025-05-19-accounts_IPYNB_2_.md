@@ -1,8 +1,4 @@
 ---
----
-
-```python
----
 toc: True
 layout: post
 data: tools
@@ -12,7 +8,6 @@ categories: ['DevOps']
 permalink: /tools/accounts
 breadcrumb: True
 ---
-```
 
 ## What Is PII?
 

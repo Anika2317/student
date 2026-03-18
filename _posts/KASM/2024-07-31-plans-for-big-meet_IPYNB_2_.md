@@ -2,9 +2,13 @@
 layout: post
 title: Plans For Big Meet Aug 1
 description: Plans for the big meeting demo
+type: ccc
+courses: {}
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/config/autoscale
 author: Rachit Jaiswal
-type: ccc
 ---
 
 <p>Plans for big meet</p>

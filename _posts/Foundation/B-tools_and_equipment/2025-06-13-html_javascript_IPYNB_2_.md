@@ -1,15 +1,10 @@
 ---
----
-
-```python
----
 layout: post
 title: HTML and JavaScript Lesson
 description: This page will teach you the basics of HTML and JavaScript.
 categories: ['HTML', 'JavaScript']
 permalink: /lessons/htmljs
 ---
-```
 
 ## HTML Basics
 

@@ -1,11 +1,10 @@
 ---
+layout: post
+title: Red Riding Hood Game
+permalink: /ridinghoodport
+codemirror: True
 ---
 
-layout: opencs
-title: Red Riding Hood Game 
-permalink: /ridinghoodport
-codemirror: true
---- 
 # The Red Riding Hood Game
 ### Made by Anika, Rashi, and Mateo! 
 
@@ -28,7 +27,6 @@ The Evil Wolf (Wolf.js): Uses an array of Waypoints. It calculates the distance 
 
 
 ```python
-%%js
 // GAME_RUNNER: Help Red collect cookies and reach the cottage! | hide_edit: false
 
 import GameControl from '/assets/js/GameEnginev1/essentials/GameControl.js';
@@ -236,3 +234,7 @@ class GameLevelRedRidingHood2 {
 export const gameLevelClasses = [GameLevelRedRidingHood1, GameLevelRedRidingHood2];
 export { GameControl };
 ```
+
+
+    <IPython.core.display.Javascript object>
+

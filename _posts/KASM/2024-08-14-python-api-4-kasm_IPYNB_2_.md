@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Kasm user API guide
-categories: [Kasm]
 permalink: /kasm/database/api
+menu: nav/kasm_cloud.html
+categories: ['Kasm']
 author: Torin Wolff
+toc: True
+comments: True
 ---
 
 ## KASM API Overview

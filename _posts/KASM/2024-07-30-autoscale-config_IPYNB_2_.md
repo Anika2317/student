@@ -2,10 +2,13 @@
 layout: post
 title: Autoscale Configuration Guide
 description: How to configure Kasm to automatically scale agents
-categories: [Kasm]
+type: ccc
+categories: ['Kasm']
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/multiserver/autoscale
 author: Rachit Jaiswal
-type: ccc
 ---
 
 ## Step 1: Licensing the Kasm Workspaces Installation

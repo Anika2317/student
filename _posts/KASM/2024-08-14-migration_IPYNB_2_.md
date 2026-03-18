@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Migration Scripts
-categories: [Kasm]
 permalink: /kasm/database/migration
+menu: nav/kasm_cloud.html
+categories: ['Kasm']
 author: Tanisha Patil
+toc: True
+comments: True
 ---
 
 # Database Migration Scripts 

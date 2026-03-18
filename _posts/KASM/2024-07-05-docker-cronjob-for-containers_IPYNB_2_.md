@@ -2,9 +2,13 @@
 layout: post
 title: Cronjob for Container Restart
 description: How to create a cronjob to check if the Kasm Docker images are running and auto-start them if not.
+type: ccc
+courses: {}
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/config/docker_cronjob_for_containers
 author: Rachit Jaiswal
-type: ccc
 ---
 
 <ol>

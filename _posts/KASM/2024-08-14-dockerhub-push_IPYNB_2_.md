@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Kasm DockerHub Push
-categories: [Kasm]
 permalink: /kasm/workspaces/dockerhub
+menu: nav/kasm_cloud.html
+categories: ['Kasm']
 author: Torin Wolff
+toc: True
+comments: True
 ---
 
 ## DockerHub Versions 

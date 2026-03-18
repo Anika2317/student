@@ -2,10 +2,13 @@
 layout: post
 title: S3 Persistent Storage
 description: How to configure Kasm to Store Persistent Data on S3
-categories: [Kasm]
+type: ccc
+categories: ['Kasm']
+menu: nav/kasm_cloud.html
+toc: True
+comments: True
 permalink: /kasm/multiserver/persistent
 author: Rachit Jaiswal
-type: ccc
 ---
 
 <p>Guide on how to configure S3 for persistent storage configuration.</p>

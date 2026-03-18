@@ -1,11 +1,12 @@
 ---
 layout: post
+toc: True
+breadcrumb: True
 title: GitHub Pages Jokes
 description: These Programming topics are focused on Jupyter Notebooks, and Managing Files.
 permalink: /github/pages/jokes
 author: John Mortensen
 ---
-
 
 ## Running Jupyter Notebooks
 

@@ -2,9 +2,13 @@
 layout: post
 title: Javascript Project Playground
 description: Build a simple project with Javascript
-categories: [JavaScript]
-permalink: /javascript/project/play
+categories: ['JavaScript']
+courses: {'csp': {'week': 3}, 'csa': {'week': 0}}
 type: ccc
+permalink: /javascript/project/play
+menu: nav/javascript_project.html
+toc: True
+comments: True
 ---
 
 ## Introduction to JavaScript and Projects 

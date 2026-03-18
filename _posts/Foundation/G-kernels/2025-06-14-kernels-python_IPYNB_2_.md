@@ -1,8 +1,4 @@
 ---
----
-
-```python
----
 layout: post
 title: Python Kernels
 description: This page will teach you how to use Python kernels in Jupyter Notebooks.
@@ -10,7 +6,6 @@ categories: ['Kernels']
 permalink: /tools/kernels/pythonkernels
 breadcrumb: True
 ---
-```
 
 Running kernels are quite simple! All you have to do is press the "play" button next to the code cell you want to run. This will execute the code in that cell and display the output below it.
 If you want to run all the code cells in the notebook, you can use the "Run All" option from the "Run" menu at the top of the page. This will execute every code cell in the notebook sequentially.

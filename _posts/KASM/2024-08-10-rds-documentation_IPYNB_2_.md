@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Relational Database Service (RDS) Setup
-categories: [Kasm]
 permalink: /kasm/database/rds
+menu: nav/kasm_cloud.html
+categories: ['Kasm']
 author: Tanisha Patil
+toc: True
+comments: True
 ---
 
 ## Introduction

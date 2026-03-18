@@ -1,17 +1,12 @@
 ---
----
-
-```python
----
-title: Math 1B Chapter 7 
-comments: true
+title: Math 1B Chapter 7
+comments: True
 layout: post
 description: Math 1B Chapter 7 equation of a line problems
 author: John Mortensen
 permalink: /tools/kernels/math
-categories: [Math]
+categories: ['Math']
 ---
-```
 
 ## Problem:
 Write the equation of the line with x-intercept (-4, 0) and y-intercept (0, 9).
@@ -118,7 +113,7 @@ display(Image(filename=output))
 
 
     
-![png](output_2_1.png)
+![png](output_1_1.png)
     
 
 

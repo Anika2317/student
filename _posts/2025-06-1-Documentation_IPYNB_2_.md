@@ -1,11 +1,11 @@
 ---
-layout: post
 title: Grade Predictor
-description: Grade Predictor documentation
+comments: True
+layout: post
 permalink: /gradepredictordocumentation
+description: Grade Predictor documentation
 author: Arya, Tarun, Akshaj, Jonah
 ---
-
 
 # 🎓 AP Grade Predictor: Using Machine Learning to Forecast Student Performance
 

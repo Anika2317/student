@@ -2,11 +2,10 @@
 layout: post
 title: Finale Blog
 description: Final Trimester 1
-categories: [Javascript, Homework]
+categories: ['Javascript', 'Homework']
 permalink: /Finale
 author: Anika
 ---
-
 
 ```python
 %%html
