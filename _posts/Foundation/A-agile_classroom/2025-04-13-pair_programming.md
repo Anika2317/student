@@ -4,7 +4,6 @@ title: Pair/Trio Programming
 description: Establishing pair/trio programming habits in the classroom.
 categories: ['Collaboration']
 courses: {'csse': {'week': 1}, 'csp': {'week': 1}, 'csa': {'week': 1}}
-menu: nav/pair_programming.html
 permalink: /pair/programming
 type: milestone 
 ---

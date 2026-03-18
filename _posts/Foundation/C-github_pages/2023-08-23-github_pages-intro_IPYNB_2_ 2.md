@@ -7,7 +7,6 @@ permalink: /github/pages/intro
 type: ccc
 courses: {'csse': {'week': 2}, 'csp': {'week': 1}, 'csa': {'week': 0}}
 author: John Mortensen
-menu: nav/github_pages.html
 ---
 
 ## GitHub Pages Mini Project

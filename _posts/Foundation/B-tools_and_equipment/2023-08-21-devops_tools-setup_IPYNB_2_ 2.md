@@ -5,7 +5,6 @@ description: A key to learning in this class is understanding how to make a GitH
 categories: ['DevOps']
 permalink: /tools/setup
 author: Lily Wu
-menu: nav/tools_setup.html
 toc: True
 comments: True
 ---

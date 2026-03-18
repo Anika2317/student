@@ -4,7 +4,6 @@ title: Anatomy of GitHub Pages
 description: Learn the Files and development work flow of GitHub Pages.  This includes working with you home page, theme, markdown, and more.
 categories: ['GitHub Pages']
 permalink: /github/pages/anatomy
-menu: nav/github_pages.html
 toc: True
 comments: True
 ---
