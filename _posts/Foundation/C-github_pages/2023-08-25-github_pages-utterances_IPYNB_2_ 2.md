@@ -5,7 +5,6 @@ description: Learn how to set up utterances for your blog. Utterances is a tool 
 categories: ['DevOps', 'GitHub Pages']
 permalink: /github/pages/utterances
 author: Trevor Huang
-menu: nav/github_pages.html
 toc: True
 comments: True
 ---

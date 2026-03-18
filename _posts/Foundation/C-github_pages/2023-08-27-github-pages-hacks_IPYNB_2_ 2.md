@@ -4,7 +4,6 @@ title: GitHub Pages Hacks
 description: Objective is to be able to work fully with Notebooks, Submenus, and Anatomy to create your own personal interest blog.
 categories: ['GitHub Pages']
 permalink: /github/pages/hacks
-menu: nav/github_pages.html
 toc: True
 comments: True
 ---
