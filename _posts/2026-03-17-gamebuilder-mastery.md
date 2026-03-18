@@ -689,5 +689,25 @@ As Scrummer, I also learned that **technical ownership and project management ar
 | Retrospective | This blog post — documenting what was learned and why |
 
 ---
+---
 
+## 📚 Homework Portfolio — CS 111 Evidence
+
+All completed homework assignments demonstrating mastery of JavaScript fundamentals:
+
+| Assignment | Topic | Link |
+|---|---|---|
+| Variables | `let`, `const`, `var`, data types, DOM output | [View](/variables) |
+| Math Expressions | Operators, arithmetic functions, DOM output | [View](/Math) |
+| Functions | Parameters, return values, recursion, DOM | [View](/Functions) |
+| Booleans | Boolean flags, conditionals, state management | [View](/Boolean) |
+| Arrays (Foundations) | Array methods, push/pop, iteration | [View](/UnderstandArray) |
+| Arrays (Applied) | Array manipulation, DOM rendering | [View](/Arrays) |
+| Classes & Variables | Class syntax, constructor, instances | [View](/classes-Variables-HW) |
+| Classes & Constructors | Inheritance, methods, cookie clicker OOP | [View](/classes-constructors-HW) |
+| Data Abstraction | Functions + classes, player system | [View](/Penguins-homework) |
+| Iteration | `while` loops, `for...of`, array iteration | [View](/Iteration) |
+| Strings | `.length`, `.toUpperCase()`, template literals | [View](/strings-homework) |
+
+> These homework assignments directly evidence the **Data Types, Operators, Control Structures, and OOP** requirements for Mira Costa CS 111 college credit.
 *Anika Seksaria · CSSE Sprint 6 · Spring 2026 · Mira Costa CS 111 · GameEngine v1.1*
