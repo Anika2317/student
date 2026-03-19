@@ -19,7 +19,7 @@ categories: [Sprint6, GameBuilder, OOP, CS111]
 
 | Section | Link to Specific Blog |
 |:---|:---|
-| **1. Rubric & Evidence** | [Open Rubric Blog Post]({{site.baseurl}}/2026/03/17/gamebuilder-mastery.html) |
+| **1. Rubric & Evidence** | [Stay on this Page](#cs111-rubric) |
 | **2. CS111 Hub** | [Open CS111 Index Hub]({{site.baseurl}}/foundation/cs111/2026-03-18-index.html) |
 | **3. Account Setup** | [Open CS111 Accounts Page]({{site.baseurl}}/foundation/cs111/2026-03-18-cs111-accounts.html) |
 | **4. SkyKingdom (FA1)** | [Jump to FA1 Section Below](#fa1-skykingdom) |
@@ -31,20 +31,20 @@ categories: [Sprint6, GameBuilder, OOP, CS111]
 ### Object-Oriented Programming Evidence
 * **Custom Classes:** `Player extends Character`, `Wolf extends Character`.
 * **Methods:** `handleCollision(other, direction)` uses two parameters.
-* **Chaining:** `super(data, gameEnv)` used in constructors.
+* **Chaining:** `super(data, gameEnv)` used in constructors to pass data upward.
 * **Hierarchy:** 3-level inheritance (`GameObject` -> `Character` -> `Player`).
 
 ---
 
 ## My Role: Scrummer {#my-role}
 
-As **Scrummer**, I managed the technical "seams." My biggest contribution was the **level transition engine** and the `destroy()` system. I ensured the game remained performant by cleaning up memory between levels.
+As **Scrummer**, I managed the technical "seams." My biggest contribution was the **level transition engine** and the cleanup system. I ensured that as Mateo and Rashi added assets and physics, the game remained performant by cleaning up memory between levels.
 
 ---
 
 ## FA1 & FA2 — SkyKingdom & Interaction {#fa1-skykingdom}
 
-FA1 established the environment. FA2 added the interaction. By configuring the `hitbox` and adding a `reaction` function, I enabled the NPC to trigger dialogue.
+FA1 established the environment. FA2 added the interaction. By configuring the `hitbox` (Data-Driven Design) and adding a `reaction` function, I enabled the NPC to trigger dialogue when the player is in range.
 
 ---
 
@@ -56,7 +56,9 @@ GameObject (base)
   └── Character extends GameObject
         ├── Player extends Character
         └── Wolf extends Character
-Retrospective {#retrospective}
+```
+
+## Retrospective {#retrospective}
 The most technically demanding thing I built was the memory management system. It forced me to understand that live DOM elements don't self-clean when a level ends. This project proved that effective game architecture relies as much on "cleaning up" as it does on "building up."
 
 Anika Seksaria · CSSE Sprint 6 · Spring 2026 · Mira Costa CS 111 · GameEngine v1.1
